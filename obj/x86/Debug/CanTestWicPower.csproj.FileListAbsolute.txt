@@ -1,0 +1,10 @@
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\bin\x86\Debug\ECanTest.exe.config
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\bin\x86\Debug\ECanTest.exe
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\bin\x86\Debug\ECanTest.pdb
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\CanTestWicPower.csproj.AssemblyReference.cache
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\ECanTest.frmM.resources
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\ECanTest.Properties.Resources.resources
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\CanTestWicPower.csproj.GenerateResource.cache
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\CanTestWicPower.csproj.CoreCompileInputs.cache
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\ECanTest.exe
+C:\Users\LYZ\Desktop\调试\GCAN\GCCAN SDK\⑤二次开发例程\双口C# 2005例子_x86\ECanTest\ECanTest\obj\x86\Debug\ECanTest.pdb

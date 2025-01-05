@@ -1,0 +1,10 @@
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\bin\Debug\ECanTest.exe.config
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\bin\Debug\ECanTest.exe
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\bin\Debug\ECanTest.pdb
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\CanTestWicPower.csproj.AssemblyReference.cache
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\ECanTest.frmM.resources
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\ECanTest.Properties.Resources.resources
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\CanTestWicPower.csproj.GenerateResource.cache
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\CanTestWicPower.csproj.CoreCompileInputs.cache
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\ECanTest.exe
+F:\360Downloads\BaiduNetdiskDownload\WicToolDemo\ECanTest\obj\Debug\ECanTest.pdb
