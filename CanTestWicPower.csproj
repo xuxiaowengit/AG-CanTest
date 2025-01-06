@@ -63,7 +63,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CANDataProcessor.cs" />
     <Compile Include="ComProc.cs" />
+    <Compile Include="CustomColors.cs" />
+    <Compile Include="DataBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataBlock.Designer.cs">
+      <DependentUpon>DataBlock.cs</DependentUpon>
+    </Compile>
     <Compile Include="ECAN.cs" />
     <Compile Include="frmM.cs">
       <SubType>Form</SubType>
@@ -73,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DataBlock.resx">
+      <DependentUpon>DataBlock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmM.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmM.cs</DependentUpon>

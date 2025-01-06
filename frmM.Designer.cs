@@ -1,4 +1,6 @@
-﻿namespace ECanTest
+﻿using System.Windows.Forms;
+
+namespace ECanTest
 {
     partial class frmM
     {
@@ -99,7 +101,6 @@
             this.lbxRec2 = new System.Windows.Forms.ListBox();
             this.btnMsgClear2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.lbxProcessedData = new System.Windows.Forms.ListBox();
             this.lblCommStatus = new System.Windows.Forms.Label();
             this.lblBatteryStatus = new System.Windows.Forms.Label();
             this.lblSOC = new System.Windows.Forms.Label();
@@ -112,6 +113,7 @@
             this.lblChargeMOSStatus = new System.Windows.Forms.Label();
             this.lblDischargeMOSStatus = new System.Windows.Forms.Label();
             this.lblCurrentState = new System.Windows.Forms.Label();
+            this.lbxProcessedData = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLength)).BeginInit();
@@ -281,7 +283,7 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(893, 99);
+            this.groupBox6.Size = new System.Drawing.Size(1055, 99);
             this.groupBox6.TabIndex = 52;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Write Messages";
@@ -321,7 +323,7 @@
             this.btnWrite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWrite.Enabled = false;
             this.btnWrite.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnWrite.Location = new System.Drawing.Point(776, 39);
+            this.btnWrite.Location = new System.Drawing.Point(921, 39);
             this.btnWrite.Margin = new System.Windows.Forms.Padding(4);
             this.btnWrite.Name = "btnWrite";
             this.btnWrite.Size = new System.Drawing.Size(87, 26);
@@ -488,7 +490,7 @@
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(893, 156);
+            this.groupBox4.Size = new System.Drawing.Size(1055, 156);
             this.groupBox4.TabIndex = 53;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Information";
@@ -497,18 +499,18 @@
             // 
             this.lbxInfo.FormattingEnabled = true;
             this.lbxInfo.ItemHeight = 15;
-            this.lbxInfo.Location = new System.Drawing.Point(13, 22);
+            this.lbxInfo.Location = new System.Drawing.Point(8, 22);
             this.lbxInfo.Margin = new System.Windows.Forms.Padding(4);
             this.lbxInfo.Name = "lbxInfo";
             this.lbxInfo.ScrollAlwaysVisible = true;
-            this.lbxInfo.Size = new System.Drawing.Size(743, 124);
+            this.lbxInfo.Size = new System.Drawing.Size(896, 124);
             this.lbxInfo.TabIndex = 56;
             // 
             // btnInfoClear
             // 
             this.btnInfoClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInfoClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInfoClear.Location = new System.Drawing.Point(776, 25);
+            this.btnInfoClear.Location = new System.Drawing.Point(921, 22);
             this.btnInfoClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnInfoClear.Name = "btnInfoClear";
             this.btnInfoClear.Size = new System.Drawing.Size(87, 26);
@@ -528,7 +530,7 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox5.Size = new System.Drawing.Size(893, 161);
+            this.groupBox5.Size = new System.Drawing.Size(1055, 161);
             this.groupBox5.TabIndex = 54;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = " Messages Reading ";
@@ -541,14 +543,16 @@
             this.lbxRec.Margin = new System.Windows.Forms.Padding(4);
             this.lbxRec.Name = "lbxRec";
             this.lbxRec.ScrollAlwaysVisible = true;
-            this.lbxRec.Size = new System.Drawing.Size(743, 124);
+            this.lbxRec.Size = new System.Drawing.Size(896, 124);
             this.lbxRec.TabIndex = 57;
+            this.lbxRec.SelectionMode = System.Windows.Forms.SelectionMode.One; // 允许单选
+            this.lbxRec.KeyDown += lbxRec_KeyDown; // 添加 KeyDown 事件处理程序
             // 
             // btnMsgClear
             // 
             this.btnMsgClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMsgClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnMsgClear.Location = new System.Drawing.Point(759, 38);
+            this.btnMsgClear.Location = new System.Drawing.Point(921, 26);
             this.btnMsgClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnMsgClear.Name = "btnMsgClear";
             this.btnMsgClear.Size = new System.Drawing.Size(87, 26);
@@ -567,11 +571,11 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(16, 108);
+            this.tabControl1.Location = new System.Drawing.Point(16, 109);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(920, 496);
+            this.tabControl1.Size = new System.Drawing.Size(1082, 496);
             this.tabControl1.TabIndex = 55;
             // 
             // tabPage1
@@ -589,7 +593,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(912, 467);
+            this.tabPage1.Size = new System.Drawing.Size(1074, 467);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "CAN1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -665,7 +669,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(912, 467);
+            this.tabPage2.Size = new System.Drawing.Size(1074, 467);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "CAN2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -715,7 +719,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(893, 99);
+            this.groupBox2.Size = new System.Drawing.Size(1055, 99);
             this.groupBox2.TabIndex = 55;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Write Messages";
@@ -755,7 +759,7 @@
             this.btnWrite2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWrite2.Enabled = false;
             this.btnWrite2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnWrite2.Location = new System.Drawing.Point(776, 39);
+            this.btnWrite2.Location = new System.Drawing.Point(938, 39);
             this.btnWrite2.Margin = new System.Windows.Forms.Padding(4);
             this.btnWrite2.Name = "btnWrite2";
             this.btnWrite2.Size = new System.Drawing.Size(87, 26);
@@ -921,7 +925,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(893, 156);
+            this.groupBox3.Size = new System.Drawing.Size(1055, 156);
             this.groupBox3.TabIndex = 56;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Information";
@@ -930,18 +934,18 @@
             // 
             this.lbxInfo2.FormattingEnabled = true;
             this.lbxInfo2.ItemHeight = 15;
-            this.lbxInfo2.Location = new System.Drawing.Point(13, 22);
+            this.lbxInfo2.Location = new System.Drawing.Point(8, 22);
             this.lbxInfo2.Margin = new System.Windows.Forms.Padding(4);
             this.lbxInfo2.Name = "lbxInfo2";
             this.lbxInfo2.ScrollAlwaysVisible = true;
-            this.lbxInfo2.Size = new System.Drawing.Size(743, 124);
+            this.lbxInfo2.Size = new System.Drawing.Size(905, 124);
             this.lbxInfo2.TabIndex = 56;
             // 
             // btnInfoClear2
             // 
             this.btnInfoClear2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInfoClear2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnInfoClear2.Location = new System.Drawing.Point(776, 25);
+            this.btnInfoClear2.Location = new System.Drawing.Point(938, 25);
             this.btnInfoClear2.Margin = new System.Windows.Forms.Padding(4);
             this.btnInfoClear2.Name = "btnInfoClear2";
             this.btnInfoClear2.Size = new System.Drawing.Size(87, 26);
@@ -961,7 +965,7 @@
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(893, 161);
+            this.groupBox7.Size = new System.Drawing.Size(1055, 161);
             this.groupBox7.TabIndex = 57;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = " Messages Reading ";
@@ -974,14 +978,14 @@
             this.lbxRec2.Margin = new System.Windows.Forms.Padding(4);
             this.lbxRec2.Name = "lbxRec2";
             this.lbxRec2.ScrollAlwaysVisible = true;
-            this.lbxRec2.Size = new System.Drawing.Size(743, 124);
+            this.lbxRec2.Size = new System.Drawing.Size(905, 124);
             this.lbxRec2.TabIndex = 57;
             // 
             // btnMsgClear2
             // 
             this.btnMsgClear2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMsgClear2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnMsgClear2.Location = new System.Drawing.Point(759, 38);
+            this.btnMsgClear2.Location = new System.Drawing.Point(921, 38);
             this.btnMsgClear2.Margin = new System.Windows.Forms.Padding(4);
             this.btnMsgClear2.Name = "btnMsgClear2";
             this.btnMsgClear2.Size = new System.Drawing.Size(87, 26);
@@ -992,30 +996,34 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.lblCommStatus);
+            this.tabPage3.Controls.Add(this.lblBatteryStatus);
+            this.tabPage3.Controls.Add(this.lblSOC);
+            this.tabPage3.Controls.Add(this.lblSOH);
+            this.tabPage3.Controls.Add(this.lblTotalVoltage);
+            this.tabPage3.Controls.Add(this.lblMinCellVoltage);
+            this.tabPage3.Controls.Add(this.lblMaxCellVoltage);
+            this.tabPage3.Controls.Add(this.lblCurrent);
+            this.tabPage3.Controls.Add(this.lblMaxTemperature);
+            this.tabPage3.Controls.Add(this.lblChargeMOSStatus);
+            this.tabPage3.Controls.Add(this.lblDischargeMOSStatus);
+            this.tabPage3.Controls.Add(this.lblCurrentState);
             this.tabPage3.Controls.Add(this.lbxProcessedData);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(912, 467);
+            this.tabPage3.Size = new System.Drawing.Size(1074, 467);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "AG_CAN_TEST";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // lbxProcessedData
-            // 
-            this.lbxProcessedData.ItemHeight = 15;
-            this.lbxProcessedData.Location = new System.Drawing.Point(8, 8);
-            this.lbxProcessedData.Name = "lbxProcessedData";
-            this.lbxProcessedData.Size = new System.Drawing.Size(896, 439);
-            this.lbxProcessedData.TabIndex = 0;
             // 
             // lblCommStatus
             // 
             this.lblCommStatus.AutoSize = true;
             this.lblCommStatus.Location = new System.Drawing.Point(20, 20);
             this.lblCommStatus.Name = "lblCommStatus";
-            this.lblCommStatus.Size = new System.Drawing.Size(100, 15);
+            this.lblCommStatus.Size = new System.Drawing.Size(113, 15);
             this.lblCommStatus.TabIndex = 0;
             this.lblCommStatus.Text = "通讯状态: 未知";
             // 
@@ -1024,7 +1032,7 @@
             this.lblBatteryStatus.AutoSize = true;
             this.lblBatteryStatus.Location = new System.Drawing.Point(20, 50);
             this.lblBatteryStatus.Name = "lblBatteryStatus";
-            this.lblBatteryStatus.Size = new System.Drawing.Size(100, 15);
+            this.lblBatteryStatus.Size = new System.Drawing.Size(113, 15);
             this.lblBatteryStatus.TabIndex = 1;
             this.lblBatteryStatus.Text = "电池状态: 未知";
             // 
@@ -1033,7 +1041,7 @@
             this.lblSOC.AutoSize = true;
             this.lblSOC.Location = new System.Drawing.Point(20, 80);
             this.lblSOC.Name = "lblSOC";
-            this.lblSOC.Size = new System.Drawing.Size(100, 15);
+            this.lblSOC.Size = new System.Drawing.Size(63, 15);
             this.lblSOC.TabIndex = 2;
             this.lblSOC.Text = "SOC: 0%";
             // 
@@ -1042,7 +1050,7 @@
             this.lblSOH.AutoSize = true;
             this.lblSOH.Location = new System.Drawing.Point(20, 110);
             this.lblSOH.Name = "lblSOH";
-            this.lblSOH.Size = new System.Drawing.Size(100, 15);
+            this.lblSOH.Size = new System.Drawing.Size(63, 15);
             this.lblSOH.TabIndex = 3;
             this.lblSOH.Text = "SOH: 0%";
             // 
@@ -1051,7 +1059,7 @@
             this.lblTotalVoltage.AutoSize = true;
             this.lblTotalVoltage.Location = new System.Drawing.Point(20, 140);
             this.lblTotalVoltage.Name = "lblTotalVoltage";
-            this.lblTotalVoltage.Size = new System.Drawing.Size(100, 15);
+            this.lblTotalVoltage.Size = new System.Drawing.Size(84, 15);
             this.lblTotalVoltage.TabIndex = 4;
             this.lblTotalVoltage.Text = "总电压: 0V";
             // 
@@ -1060,7 +1068,7 @@
             this.lblMinCellVoltage.AutoSize = true;
             this.lblMinCellVoltage.Location = new System.Drawing.Point(20, 170);
             this.lblMinCellVoltage.Name = "lblMinCellVoltage";
-            this.lblMinCellVoltage.Size = new System.Drawing.Size(100, 15);
+            this.lblMinCellVoltage.Size = new System.Drawing.Size(129, 15);
             this.lblMinCellVoltage.TabIndex = 5;
             this.lblMinCellVoltage.Text = "单体最低电压: 0V";
             // 
@@ -1069,7 +1077,7 @@
             this.lblMaxCellVoltage.AutoSize = true;
             this.lblMaxCellVoltage.Location = new System.Drawing.Point(20, 200);
             this.lblMaxCellVoltage.Name = "lblMaxCellVoltage";
-            this.lblMaxCellVoltage.Size = new System.Drawing.Size(100, 15);
+            this.lblMaxCellVoltage.Size = new System.Drawing.Size(129, 15);
             this.lblMaxCellVoltage.TabIndex = 6;
             this.lblMaxCellVoltage.Text = "单体最高电压: 0V";
             // 
@@ -1078,7 +1086,7 @@
             this.lblCurrent.AutoSize = true;
             this.lblCurrent.Location = new System.Drawing.Point(20, 230);
             this.lblCurrent.Name = "lblCurrent";
-            this.lblCurrent.Size = new System.Drawing.Size(100, 15);
+            this.lblCurrent.Size = new System.Drawing.Size(69, 15);
             this.lblCurrent.TabIndex = 7;
             this.lblCurrent.Text = "电流: 0A";
             // 
@@ -1087,7 +1095,7 @@
             this.lblMaxTemperature.AutoSize = true;
             this.lblMaxTemperature.Location = new System.Drawing.Point(20, 260);
             this.lblMaxTemperature.Name = "lblMaxTemperature";
-            this.lblMaxTemperature.Size = new System.Drawing.Size(100, 15);
+            this.lblMaxTemperature.Size = new System.Drawing.Size(114, 15);
             this.lblMaxTemperature.TabIndex = 8;
             this.lblMaxTemperature.Text = "最高温度: 0°C";
             // 
@@ -1096,7 +1104,7 @@
             this.lblChargeMOSStatus.AutoSize = true;
             this.lblChargeMOSStatus.Location = new System.Drawing.Point(20, 290);
             this.lblChargeMOSStatus.Name = "lblChargeMOSStatus";
-            this.lblChargeMOSStatus.Size = new System.Drawing.Size(100, 15);
+            this.lblChargeMOSStatus.Size = new System.Drawing.Size(137, 15);
             this.lblChargeMOSStatus.TabIndex = 9;
             this.lblChargeMOSStatus.Text = "充电MOS状态: 未知";
             // 
@@ -1105,7 +1113,7 @@
             this.lblDischargeMOSStatus.AutoSize = true;
             this.lblDischargeMOSStatus.Location = new System.Drawing.Point(20, 320);
             this.lblDischargeMOSStatus.Name = "lblDischargeMOSStatus";
-            this.lblDischargeMOSStatus.Size = new System.Drawing.Size(100, 15);
+            this.lblDischargeMOSStatus.Size = new System.Drawing.Size(137, 15);
             this.lblDischargeMOSStatus.TabIndex = 10;
             this.lblDischargeMOSStatus.Text = "放电MOS状态: 未知";
             // 
@@ -1114,15 +1122,23 @@
             this.lblCurrentState.AutoSize = true;
             this.lblCurrentState.Location = new System.Drawing.Point(20, 350);
             this.lblCurrentState.Name = "lblCurrentState";
-            this.lblCurrentState.Size = new System.Drawing.Size(100, 15);
+            this.lblCurrentState.Size = new System.Drawing.Size(113, 15);
             this.lblCurrentState.TabIndex = 11;
             this.lblCurrentState.Text = "当前状态: 正常";
+            // 
+            // lbxProcessedData
+            // 
+            this.lbxProcessedData.ItemHeight = 15;
+            this.lbxProcessedData.Location = new System.Drawing.Point(8, 8);
+            this.lbxProcessedData.Name = "lbxProcessedData";
+            this.lbxProcessedData.Size = new System.Drawing.Size(1059, 454);
+            this.lbxProcessedData.TabIndex = 0;
             // 
             // frmM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 619);
+            this.ClientSize = new System.Drawing.Size(1111, 619);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1148,6 +1164,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
