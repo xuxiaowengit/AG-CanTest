@@ -226,6 +226,8 @@ namespace ECanTest
             {
                 IncludeTextMessage("Start Fault"); // 显示失败消息
             }
+
+            this.tabControl1.SelectedTab = this.tabPage3; // 选择 tabPage3
         }
 
         // 波特率选择变化事件处理
@@ -336,6 +338,7 @@ namespace ECanTest
             ReadError1(); // 读取错误信息
             ReadError2(); // 读取第二条错误信息
             ProcessDataFromCAN1(); // 处理来自 CAN1 的数据
+              UpdateStatusDisplay(); // 更新状态显示
         }
 
         // 读取错误信息的方法
@@ -612,6 +615,9 @@ namespace ECanTest
             lblChargeMOSStatus.Text = "充电MOS状态: 正常"; // 更新充电 MOS 状态
             lblDischargeMOSStatus.Text = "放电MOS状态: 正常"; // 更新放电 MOS 状态
             lblCurrentState.Text = "当前状态: 运行中"; // 更新当前状态
+            ReadError2(); // 读取第二条错误信息
+
+            UpdateStatusDisplay(); // 更新状态显示
         }
     }
 }
