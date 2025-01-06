@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|f:\\360downloads\\baidunetdiskdownload\\wictooldemo\\ecantest\\frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|f:\\360downloads\\baidunetdiskdownload\\wictooldemo\\ecantest\\candataprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:candataprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|f:\\360downloads\\baidunetdiskdownload\\wictooldemo\\ecantest\\candataprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:candataprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|f:\\360downloads\\baidunetdiskdownload\\wictooldemo\\ecantest\\frmm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:frmm.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|f:\\360downloads\\baidunetdiskdownload\\wictooldemo\\ecantest\\frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{203559DC-8B29-4509-B332-DF975A271FBE}|CanTestWicPower.csproj|solutionrelative:frmm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "frmM.cs",
               "DocumentMoniker": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\frmM.cs",
               "RelativeDocumentMoniker": "frmM.cs",
               "ToolTip": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\frmM.cs",
               "RelativeToolTip": "frmM.cs",
-              "ViewState": "AQIAAC8CAAAAAAAAAAAswEACAABNAAAA",
+              "ViewState": "AQIAAC8CAAAAAAAAAAAswEACAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-05T15:48:44.235Z",
               "IsPinned": true,
@@ -44,26 +44,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CANDataProcessor.cs",
               "DocumentMoniker": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\CANDataProcessor.cs",
               "RelativeDocumentMoniker": "CANDataProcessor.cs",
               "ToolTip": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\CANDataProcessor.cs",
               "RelativeToolTip": "CANDataProcessor.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAcwDwAAAAKAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAcwFEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T10:30:22.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "frmM.Designer.cs",
               "DocumentMoniker": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\frmM.Designer.cs",
               "RelativeDocumentMoniker": "frmM.Designer.cs",
               "ToolTip": "F:\\360Downloads\\BaiduNetdiskDownload\\WicToolDemo\\ECanTest\\frmM.Designer.cs",
               "RelativeToolTip": "frmM.Designer.cs",
-              "ViewState": "AQIAABECAAAAAAAAAAAowCACAAAzAAAA",
+              "ViewState": "AQIAAOkDAAAAAAAAAAAAAPkDAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T06:05:51.047Z",
               "EditorCaption": ""

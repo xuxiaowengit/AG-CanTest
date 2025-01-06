@@ -457,7 +457,7 @@ namespace ECanTest
           this.lbxRec.Items.Clear(); // 清空 ListBox
         }
         mCount++; // 增加计数
-        if (mCount >= 50) // 如果达到 50 条
+        if (mCount >= 150) // 如果达到 50 条
         {
           break; // 退出循环
         }
@@ -642,20 +642,7 @@ namespace ECanTest
       lblCurrentState.Text = "当前状态: 未知";
     }
 
-    // 根据CAN数据更新状态显示
-    // private void UpdateStatusFromCAN(CAN_OBJ frameinfo)
-    // {
-    //   // 解析数据并更新UI
-    //   float voltage = BitConverter.ToSingle(frameinfo.data, 0);
-    //   float current = BitConverter.ToSingle(frameinfo.data, 4);
-
-    //   // 更新显示
-    //   lblTotalVoltage.Text = $"总电压: {voltage:F2}V";
-    //   lblCurrent.Text = $"电流: {current:F2}A";
-
-    //   // 触发UI更新
-    //   tabPage3.Refresh();
-    // }
+ 
 
     // 波特率选择变化事件处理
     private void cbbBaudrates2_SelectedIndexChanged(object sender, EventArgs e)
@@ -730,16 +717,16 @@ namespace ECanTest
       // 靠名称定位元素，更新状态显示
       // UpdateDataBlock("通讯状态", "失败", Color.White, CustomColors.Cgray);
       UpdateDataBlock("电池状态", "正常", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("SOC", "75%", Color.White, CustomColors.CBlue);
-      UpdateDataBlock("SOH", "80%", Color.White, CustomColors.CYellow);
-      UpdateDataBlock("总电压", "72V", Color.White, CustomColors.CRed);
-      UpdateDataBlock("单体最低电压", "3.2V", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("单体最高电压", "3.6V", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("电流", "1A", Color.White, CustomColors.CBlue);
-      UpdateDataBlock("最高温度", "30°C", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("充电MOS状态", "开启", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("放电MOS状态", "开启", Color.White, CustomColors.CGreen);
-      UpdateDataBlock("当前状态", "运行中", Color.White, CustomColors.CBlue);
+      // UpdateDataBlock("SOC", "75%", Color.White, CustomColors.CBlue);
+      // UpdateDataBlock("SOH", "80%", Color.White, CustomColors.CYellow);
+      // UpdateDataBlock("总电压", "72V", Color.White, CustomColors.CRed);
+      // UpdateDataBlock("单体最低电压", "3.2V", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("单体最高电压", "3.6V", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("电流", "1A", Color.White, CustomColors.CBlue);
+      // UpdateDataBlock("最高温度", "30°C", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("充电MOS状态", "开启", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("放电MOS状态", "开启", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("当前状态", "运行中", Color.White, CustomColors.CBlue);
 
     }
 

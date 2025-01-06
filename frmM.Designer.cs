@@ -1015,7 +1015,7 @@ namespace ECanTest
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(1074, 467);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "AG_CAN_TEST";
+            this.tabPage3.Text = "AG_Chcek";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // lblCommStatus
