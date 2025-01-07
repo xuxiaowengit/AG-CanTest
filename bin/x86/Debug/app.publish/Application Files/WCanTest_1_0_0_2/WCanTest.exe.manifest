@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WCanTest.exe" version="1.0.0.2" publicKeyToken="cef16be6ffd65ff3" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WCanTest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WCanTest.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WCanTest.exe" size="72128">
+      <assemblyIdentity name="WCanTest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Fm6+8yLUbMTJ8t80lFcpqrQ4p2Aq9iiiLMJMRBPGP/A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WCanTest.exe.config" size="161">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1hvekB5xicyX1FodTEqjnUxN4raEGXc+x3QzhQbWWa0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=WIC-0017\Jeking" issuerKeyHash="4e2876c2fa5ee1567ec1e99c220cc798c459c5da" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LyCHBGMAK+W9+ent7XZWT38xkUV8zVjDBlTyf2NgAIk=</DigestValue></Reference></SignedInfo><SignatureValue>l++c87/q5gkSGpy4FBDuXoUEFe43PKeWjhG9D2hkJ7MOuZ8+ATKgVJBMAVF7fx1cyJdTUkGeYZW8rP2tKAeG3aHrCRuW+6IRg0tQOVgMxDlL56bVJ3p2i6L4gYVpMKPLGa5wSUttH6rF6fzy+4pxfhMiOnwPIbXhzGW6VE7OXFE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vU/Vimixb9J1uJtLkxvKfPZZmamVh+fDIdkO9vwjlmSVvAy6OzQ5EeVicZycRrvtB1jxU351eE2zGT/m14d+8ZTA7GvNlM90P0DAtIwNJXqYtHfRwul1KlcqtUbZKie6lZDd8AMX6XueJP/16MnZG3jX+samc+hCABg/e078G90=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="890060637ff25406c358cd7c4591317f4f5676edede9f9bde52b00630487202f" Description="" Url=""><as:assemblyIdentity name="WCanTest.exe" version="1.0.0.2" publicKeyToken="cef16be6ffd65ff3" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WIC-0017\Jeking</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kB559bDXe+JmWrkOKQNGs6znWiPewu8BqSlo++ZGURw=</DigestValue></Reference></SignedInfo><SignatureValue>WwBJzZ7s73cloPW0qQjFkdnUjXt/vssQWE8/+OiI5E2v8Y/4Y0mHZjbclqRmr9kXXN8CVvNJXac9jXikEXYxxrvXb0eNkPfQdcLBul8KiXb/JqGJw4Awgn1LltBOygr1AewbObyC2Vo/sZD3pKW+7EHKGk/ciNJBzv+5y+28qOM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vU/Vimixb9J1uJtLkxvKfPZZmamVh+fDIdkO9vwjlmSVvAy6OzQ5EeVicZycRrvtB1jxU351eE2zGT/m14d+8ZTA7GvNlM90P0DAtIwNJXqYtHfRwul1KlcqtUbZKie6lZDd8AMX6XueJP/16MnZG3jX+samc+hCABg/e078G90=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQYpCVzRGVGo1I2IDRxW24nDANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4AVwBJAEMALQAwADAAMQA3AFwASgBlAGsAaQBuAGcwHhcNMjUwMTA3MDEyMTUxWhcNMjYwMTA3MDcyMTUxWjApMScwJQYDVQQDHh4AVwBJAEMALQAwADAAMQA3AFwASgBlAGsAaQBuAGcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL1P1YposW/SdbibS5Mbynz2WZmplYfnwyHZDvb8I5ZklbwMujs0ORHlYnGcnEa77QdY8VN+dXhNsxk/5teHfvGUwOxrzZTPdD9AwLSMDSV6mLR30cLpdSpXKrVG2SonupWQ3fADF+l7niT/9ejJ2Rt41/rGpnPoQgAYP3tO/BvdAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAReFiuzqmvMyqvUNSqiVcxqKq2E5OWcSi5jkh6gT4ixN2hMWeDJHrWIfgyzykER513NzXhQ0WJMTbrvftPDXj3J19BsD3RiDNJjY0DQO2pjq6f59tHwyRx7bo4htbR8quJu7UrxIO9aoFmYu1AzT4UQuhs/o9mi/KhuhgP+Q2NZk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

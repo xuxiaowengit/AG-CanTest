@@ -716,7 +716,7 @@ namespace ECanTest
 
       // 靠名称定位元素，更新状态显示
       // UpdateDataBlock("通讯状态", "失败", Color.White, CustomColors.Cgray);
-      UpdateDataBlock("电池状态", "正常", Color.White, CustomColors.CGreen);
+      // UpdateDataBlock("电池状态", "正常", Color.White, CustomColors.CGreen);
       // UpdateDataBlock("SOC", "75%", Color.White, CustomColors.CBlue);
       // UpdateDataBlock("SOH", "80%", Color.White, CustomColors.CYellow);
       // UpdateDataBlock("总电压", "72V", Color.White, CustomColors.CRed);

@@ -22,11 +22,12 @@ namespace ECanTest
         
         case 0x1806E5F4:
           ProcessCommunicationStatus(data);
+          ProcessBatteryStatus(data);
           Console.WriteLine($"Received CAN ID:{id:X8}");
           Console.WriteLine($"Received CAN DATA:{data[0]}");
           break;
         case 0x101:
-          ProcessBatteryStatus(data);
+         
           Console.WriteLine($"Received CAN ID:{id:X8}");
           Console.WriteLine($"Received CAN DATA:{data[0]}");
           break;
